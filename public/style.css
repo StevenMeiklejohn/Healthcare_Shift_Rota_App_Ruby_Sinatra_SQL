@@ -1,0 +1,44 @@
+
+@font-face {
+  font-family: 'medical';
+  src:  url('Quicksand_Bold.otf') format('opentype'),
+  url('Quicksand_Bold.otf') format('opentype');
+}
+
+
+
+html { 
+  background: url(http://www.birminghamcarershub.org.uk/content/uploads/2015/04/carer-holding-new.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'medical';
+}
+
+.container2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50px;
+  color: white;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -150px;
+  color: #0b2b5e
+}
+
+
+
+

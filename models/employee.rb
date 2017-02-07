@@ -51,6 +51,11 @@ class Employee
       ) 
   end
 
+  def self.destroy( id )
+    sql = "DELETE FROM employees WHERE id = #{id}"
+    result = SqlRunner.run(sql)
+  end
+
 def employee_shifts()
   shifts = Shift.all
   total = 0

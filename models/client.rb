@@ -49,6 +49,13 @@ class Client
     return result
   end
 
+  def self.destroy( id )
+    sql = "DELETE FROM clients WHERE id = #{id}"
+    result = SqlRunner.run(sql)
+  end
+
+
+
 
 
 end

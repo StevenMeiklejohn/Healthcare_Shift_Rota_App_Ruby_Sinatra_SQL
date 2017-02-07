@@ -1,32 +1,33 @@
-<%= @client.name %><br>
 
-<li>
-<p>Client image:</p>
-<img src="<%= @client.image %>" height="300" width=300><br>
-</li>
+<div class ="title" id="title">
+<h1><%= @client.name %></h1>
+</div>
 
 
-<li>
-<p>Client id:</p>
-<%=@client.id %><br>
-</li><br>
-
-<li>
-<p>Client Requirements:</p>
-<%= @client.requirements %><br>
-</li><br>
-
-<li>
-<p>Client Address:</p>
-<%= @client.address %><br>
-</li>
-
-
-
-<a href="<%=@client.id %>/edit">Edit client</a>
-
+<div class="grid" id="col-1-3_1">
+<div class="col-1-3_e_show">
+<p>Client ID:  <%= @client.id %></p>
+</br>
+<p>Client Name:  <%= @client.name %></p>
+</br>
+<p>Client Address:  <%= @client.address %></p>
+</br>
+<p>Client Requirements:  <%= @client.requirements %></p>
+</br>
+</div>
+<div class="col-2-3_e_show">
+<img id="employee_index_image" src="<%= @client.image %>" height="400" width="400">
+</br>
+</br>
+<form action="/clients/<%= @client.id %>/edit" method="get">
+  <input type="hidden" name="_method" value="edit">
+  <input type="submit" value="edit client">
+</form>
 
 <form action="/clients/<%= @client.id %>" method="post">
   <input type="hidden" name="_method" value="delete">
   <input type="submit" value="delete client">
 </form>
+</div>
+</br>
+</div>

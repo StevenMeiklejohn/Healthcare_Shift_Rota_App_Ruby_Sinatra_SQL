@@ -15,7 +15,7 @@ get( '/healthcare' ) do
   @employees = Employee.all()
   @clients = Client.all()
   @shifts = Shift.all()
-  @healthcare = true
+
   erb :login, :layout => :login_layout
 end
 

@@ -6,13 +6,14 @@
 }
 
 html { 
-  background: url('blur.jpg') no-repeat center center fixed; 
+  background: url(http://www.birminghamcarershub.org.uk/content/uploads/2015/04/carer-holding-new.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   font-family: 'medical';
 }
+
 
 
 #rectangle{
@@ -26,7 +27,7 @@ html {
   display: block;
   padding-top: 30px;
   padding-left: 35%;
-  color: white;
+  color: #389b2b;
   font-size: 25px;
 }
 
@@ -45,82 +46,7 @@ html {
 
 
 
-.col-1-3 {
-  width: 33.33%;
-  float: left;
-  padding-right: 0px;
-  padding-left: 50px;
-  padding-top: 100px;
-  font-family: 'medical';
-  font-size: 20px;
-  color: white;
-}
 
-
-#col-1-3_1 a:link { color: blue; }
-#col-1-3_1 a:visited { color: #70DB93; }
-#col-1-3_1 a:hover { color: #70DB93; }
-#col-1-3_1 a:active { color: #70DB93; }
-#col-1-3_1 img {border: 15px solid #389b2b;
-  padding: 1px;}
-
-
-.col-2-3 {
-  width: 66.66%;
-  float: left;
-  padding-right: 0px;
-  padding-left: 250px;
-  padding-top: 50px;
-  font-family: 'medical';
-  font-size: 20px;
-  color: blue;
-}
-
-
-
-
-
-
-.col-1-3_e_show {
-  width: 33.33%;
-  float: left;
-  padding-right: 0px;
-  padding-left: 50px;
-  padding-top: 0px;
-  font-family: 'medical';
-  font-size: 20px;
-  color: white;
-}
-#col-1-3_e_show p { color: #389b2b; }
-#col-1-3_e_show img {
-  border: 15px 
-  solid #389b2b;
-  padding: 1px;}
-
-
-.col-2-3_e_show {
-  width: 66.66%;
-  float: left;
-  padding-right: 0px;
-  padding-left: 250px;
-  padding-top: 0px;
-  font-family: 'medical';
-  font-size: 20px;
-  color: #389b2b;
-}
-
-.grid:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
 
 

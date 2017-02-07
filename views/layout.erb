@@ -3,13 +3,13 @@
 <head>
   <title>Healthcare_App</title>
   <link rel="stylesheet" type="text/css" href="/style.css">
-  <link rel="stylesheet" type="text/css" href="/nav.css">
 
 </head>
 <body>
- <nav id="nav" name="nav">
- <link rel="stylesheet" type="text/css" href="/nav.css">
-   <ul>
+<div class="page-bg">
+
+ <nav>
+   <ul class="topnav" id="myTopnav">
      <li><a href="/employees">Employees</a> </li>
      <li><a href="/clients">Clients</a> </li>
      <li><a href="/shifts">Shifts</a> </li>
@@ -19,9 +19,11 @@
      <li><a href="/healthcare">Log Out</a> </li>
    </ul>
  </nav>
+
  <main>
  <%= yield %>
  </main> 
+ </div>
 </body>  
 </html>
 

@@ -1,5 +1,7 @@
 
 require_relative('../models/employee')
+require_relative('../models/shift')
+
 
 get '/employees/new' do
   #NEW
@@ -23,6 +25,13 @@ get '/employees/:id' do
   #SHOW
   @employee = Employee.find( params[:id] )
   erb( :'employees/show' )
+end
+
+get '/employees/:id/shifts' do
+  #SHOW
+  @employee = Employee.find( params[:id] )
+  @shifts = Shift.all()
+  erb( :'employees/show_shifts' )
 end
 
 

@@ -14,7 +14,7 @@
 </br>
 <p>Employee Start Date:  <%= @employee.start_date %></p>
 </br>
-<p>Number of upcoming shifts:  <%= @employee.employee_shifts %></p>
+<p>Number of upcoming shifts: <a href="/employees/<%= @employee.id %>/shifts"><%= @employee.employee_shifts %></a></p>
 </div>
 <div class="col-2-3_e_show">
 <img id="employee_index_image" src="<%= @employee.image %>" height="400" width="400">

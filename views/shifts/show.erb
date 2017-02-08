@@ -1,54 +1,39 @@
+<div class ="title" id="title">
+<h1>Edit Shift</h1>
+</div>
 
 
 
-<li>
-<p>Shift ID:</p>
-<%= @shift.id %><br>
-</li><br>
+<div class="grid" id="col-1-3_e_show">
+<div class="col-1-3_e_show">
+<p>Shift ID:  <a href="<%= @shift.id %>/edit"><%= @shift.id %></a></p>
+<p>Employee:  <a href="<%= @shift.id %>/edit"><%= @shift.employee.name %></a></p>
+<p>Client:  <a href="<%= @shift.id %>/edit"><%= @shift.client.name %></a></p>
+<p>Date of Shift:  <a href="<%= @shift.id %>/edit"><%= @shift.shift_date %></a></p>
+<p>Time of Shift:  <a href="<%= @shift.id %>/edit"><%= @shift.shift_time %></a></p>
+<p>Status:  <a href="<%= @shift.id %>/edit"><%= @shift.shift_status %></a></p>
+<p>To volunteer for shift, or remove yourself from the shift click edit under the picture of any of the details above.</p>
+</div>
 
-<li>
-<p>Employee id:</p>
-<%=@shift.employee.id %><br>
-</li><br>
+<div class="col-2-3">
+<img id="employee_index_image" src="<%= @shift.client.image %>" height="300" width="300">
+</br>
 
-
-<li>
-<p>Employee:</p>
-<%=@shift.employee.name %><br>
-<img src="<%= @shift.employee.image %>" height="300" width=300><br
-</li><br>
-
-<li>
-<p>Client:</p>
-<%=@shift.client.name %><br>
-<img src="<%= @shift.client.image %>" height="300" width=300><br
-</li><br>
-
-
-
-<li>
-<p>Shift Date:</p>
-<%=@shift.shift_date %><br>
-</li><br>
-
-<li>
-<p>Shift Time:</p>
-<%= @shift.shift_time %><br>
-</li><br>
-
-<li>
-<p>Availability:</p>
-<%=@shift.shift_status %><br>
-</li><br>
-
-
-
-
-
-<a href="<%= @shift.id %>/edit">Edit/Volunteer for shift</a>
-
+<form action="/shifts/<%= @shift.id %>" method="get">
+  <input type="hidden" name="_method" value="edit">
+  <input type="submit" value="edit shift">
+</form>
 
 <form action="/shifts/<%= @shift.id %>" method="post">
   <input type="hidden" name="_method" value="delete">
   <input type="submit" value="delete shift">
 </form>
+
+</div>
+</div>
+</br>
+
+
+
+
+

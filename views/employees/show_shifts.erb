@@ -1,5 +1,5 @@
 <div class ="title" id="title">
-<h1>Shift Index</h1>
+<h1>Employee Upcoming Shifts</h1>
 </div>
 
 <div class ="title" id="title">
@@ -8,6 +8,7 @@
 
 
 <% for shift in @shifts %>
+<% if shift.employee_id == @employee.id %>
 <div class="grid" id="col-1-3_e_show">
 <div class="col-1-3_e_show">
 <p>Shift ID:  <a href="/shifts/<%= shift.id %>"><%= shift.id %></a></p>
@@ -21,6 +22,7 @@
 <div class="col-2-3">
 <img id="employee_index_image" src="<%= shift.client.image %>" height="300" width="300">
 </div>
+<% end %>
 <% end %>
 </div>
 </br>

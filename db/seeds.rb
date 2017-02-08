@@ -8,30 +8,30 @@ Client.delete_all()
 Shift.delete_all()
 
 employee1 = Employee.new({
-  'name' => 'Sally Smith', 
-  'bio' => 'Age 35. Demolitions expert, fully qualified for moving and handling. Likes Pina Coladas and getting caught in the rain.', 
-  'image' => 'http://mp-mydailythread.com/wp-content/uploads/2015/04/5.jpg', 
+  'name' => 'John Matrix', 
+  'bio' => 'Murdered an entire island of professional soldiers when his daughter was kidnapped. Expert in hand to hand combat, explosives and one liners', 
+  'image' => 'http://vignette3.wikia.nocookie.net/uncyclopedia/images/6/64/Arnie_rocket_launcher.jpg/revision/latest?cb=20100729153044', 
   'start_date' => '2010-10-4'
   })
 
 employee2 = Employee.new({ 
-  'name' => 'Barbara Burton', 
-  'bio' => 'Age 37. Expert hand to hand and knife skills. Fully qualified for moving and handling. Likes people with manners.', 
-  'image' => 'http://www.worcester.ac.uk/content_images/nursing-university-worcester-course-page-key-features.jpg', 
+  'name' => 'Charles Bronson', 
+  'bio' => 'Unbelievably, spectacularly, unlucky when it comes to women and violent crime. He likes his revenge served at any temperature. Also sports an unusual moustache', 
+  'image' => 'http://saboteur365.files.wordpress.com/2014/09/charles-bronson-in-death-wish-movie.png?w=584', 
   'start_date' => '2012-05-06'
   })
 
 employee3 = Employee.new({
-  'name' => 'Mike Jones', 
-  'bio' => 'Congressional medal, former black ops, not just a cook. Likes romantic walks and koi.', 
-  'image' => 'http://www.degreesfinder.com/wp-content/uploads/2012/01/male-nurse.jpg', 
+  'name' => 'Slider', 
+  'bio' => 'Piot. Enjoys playin with the boys (mainly volleyball). Wingman. Stinks.', 
+  'image' => 'https://s-media-cache-ak0.pinimg.com/originals/15/d9/45/15d945ab654515ee9344bef8351b80aa.jpg', 
   'start_date' => '2015-10-19'
   })
 
 employee4 = Employee.new({ 
-  'name' => 'Penny Lane', 
-  'bio' => 'Former KGB, gymnast and game show contestant. Fully qualified in moving and handling. Likes sunsets.', 
-  'image' => 'http://www.worcester.ac.uk/content_images/nursing-student-university-worcester.jpg', 
+  'name' => 'Dwayne Hicks', 
+  'bio' => 'Corporal in space marines. Prone to nuking sites from orbit (only way to be sure). No offence.', 
+  'image' => 'http://vignette2.wikia.nocookie.net/avp/images/1/15/Hicks_drop.jpg/revision/latest?cb=20130416055835', 
   'start_date' => '2014-03-24'
   })
 
@@ -44,7 +44,7 @@ employee5 = Employee.new({
 
 employee6 = Employee.new({ 
   'name' => 'Marion Cobreti', 
-  'bio' => 'Cop. Chews toothpicks. Asks questions later. Almost certainly a Republican', 
+  'bio' => 'Likes; Toothpicks, Trumps, country music. Dislikes; Due process, human rights.',
   'image' => 'http://www.monologuedb.com/wp-content/uploads/2011/03/sylvester-stallone-Marion-Cobretti-cobra.jpg', 
   'start_date' => '2014-03-24'
   })
@@ -59,32 +59,31 @@ e6 = employee6.save
 
 
 client1 = Client.new({ 
- 'name' => 'Mr Maxwell',
- 'image' => 'https://www.vitamindcouncil.org/wp-content/uploads/2012/07/old-man2.jpg',
- 'address' => '21 Glasgow Rd', 
- 'requirements' => 'Tea and tuck'
+ 'name' => 'Mumm-Ra The Ever Living',
+ 'image' => 'http://www.rubberslug.com/user/cb2d416666eb484abb638d9889e9ec9c/326503-5452387-mummrawatermk.jpg',
+ 'address' => 'Black Pyramid, Third Earth', 
+ 'requirements' => 'Ancient spirits of evil, gluten free diet'
  })
 
 client2 = Client.new({ 
-  'name' => 'Mrs Macintyre',
-  'image' => 'http://cdn.bleedingcool.net/wp-content/uploads/2015/04/surviving-sticker-shock-when-buying-a-new-car.png', 
-  'address' => '22 Paisley Rd', 
-  'requirements' => 'Dinner, Bed bath'
+  'name' => 'Zelda',
+  'image' => 'https://pbs.twimg.com/profile_images/445318550412996608/rCAR7sep.jpeg', 
+  'address' => 'Unknown', 
+  'requirements' => 'Planetery domination, bed baths.'
   })
 
 client3 = Client.new({ 
-  'name' => 'Mr Braxton', 
+  'name' => 'Wicked Step Mother', 
   'address' => '45a Sinclair Crescent', 
-  'image' => 'https://400dollarchallenge.files.wordpress.com/2012/02/elderly-man.jpg',
-  'requirements' => 
-  'Morning dress, shower'
+  'image' => 'http://www.cinechronicle.com/wp-content/uploads/2012/11/Lady-Tremaine.jpg',
+  'requirements' => 'A kind hearted servant to torture. A grade A asshole to lavish with love.'
   })
 
 client4 = Client.new({ 
-  'name' => 'Mrs Shannon', 
-  'image' => 'https://coveredinbeer.files.wordpress.com/2014/03/mean-old-lady.jpg',
-  'address' => '8a Barrhead Rd', 
-  'requirements' => 'Tea and tuck, shower'
+  'name' => 'Vulture', 
+  'image' => 'http://static.comicvine.com/uploads/original/0/394/78015-36314-vulture.gif',
+  'address' => 'New York', 
+  'requirements' => 'The humiliating defeat of Spider-man. Arthritis medication.'
   })
 
 

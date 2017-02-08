@@ -18,8 +18,12 @@
 <p>Status:  <a href="/shifts/<%= shift.id %>"><%= shift.shift_status %></a></p>
 </div>
 
-<div class="col-2-3">
-<img id="employee_index_image" src="<%= shift.client.image %>" height="300" width="300">
+<div class="shift_index">
+<% if shift.shift_status == "available" %>
+<img class="shift_index_available" src="<%= shift.client.image %>" height="300" width="300">
+<% else %>
+<img class="shift_index_taken" src="<%= shift.client.image %>" height="300" width="300">
+<% end %>
 </div>
 <% end %>
 </div>

@@ -19,7 +19,7 @@
 <img id="employee_index_image" src="<%= @shift.client.image %>" height="300" width="300">
 </br>
 
-<form action="/shifts/<%= @shift.id %>" method="get">
+<form action="/shifts/<%= @shift.id %>/edit" method="get">
   <input type="hidden" name="_method" value="edit">
   <input type="submit" value="edit shift">
 </form>

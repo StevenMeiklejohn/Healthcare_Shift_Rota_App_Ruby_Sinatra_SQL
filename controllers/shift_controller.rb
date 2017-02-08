@@ -1,4 +1,6 @@
 require_relative('../models/shift')
+require_relative('../models/employee')
+
 
 get '/shifts/new' do
   #NEW
